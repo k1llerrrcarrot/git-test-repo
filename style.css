@@ -1,0 +1,81 @@
+body {
+  margin: 0;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  transition: background-color 250ms;
+}
+
+.current-color {
+  position: absolute;
+  display: flex;
+  top: calc(50% - 43px);
+  left: calc(50% - 100px);
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.current-color h1 {
+  margin: 0;
+  align-self: center;
+}
+.current-color h1::first-letter {
+  text-transform: capitalize;
+}
+
+.menu-wrapper {
+  width: 75px;
+  height: 75px;
+}
+.menu-wrapper.visible {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  height: 100%;
+}
+
+.color-menu-btn {
+  width: 75px;
+  height: 75px;
+  background-image: url("./images/hamburger_menu.png");
+  background-repeat: no-repeat;
+  background-size: 75%;
+  background-position: center;
+  cursor: pointer;
+}
+
+.color-menu {
+  position: relative;
+  margin: 0;
+  margin-left: -508px;
+  padding: 4px;
+  width: 500px;
+  line-height: 40px;
+  background: white;
+  transition: margin-left 250ms ease-in-out;
+}
+.color-menu.visible {
+  margin-left: 0px;
+}
+.color-menu li:not(:last-child) {
+  list-style-type: none;
+  margin-bottom: 4px;
+}
+
+.white {
+  background: white;
+}
+
+.red {
+  background: red;
+}
+
+.orange {
+  background: orange;
+}
+
+.purple {
+  background: purple;
+}
+
+.green {
+  background: green;
+}/*# sourceMappingURL=style.css.map */

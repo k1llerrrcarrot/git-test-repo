@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Color Toggle</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script defer src="script.js"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <div class="menu-wrapper" id="menu-wrapper">
+            <div class="color-menu-btn"></div>
+            <ul class="color-menu" id="color-menu">
+                <label for="white-btn">
+                    <li class="white" id="white">
+                        <input type="radio" name="colors" id="white-btn" checked="true" />White
+                    </li>
+                </label>
+
+                <label for="red-btn">
+                    <li class="red" id="red">
+                        <input type="radio" name="colors" id="red-btn" />Red
+                    </li>
+                </label>
+
+                <label for="orange-btn">
+                    <li class="orange" id="orange">
+                        <input type="radio" name="colors" id="orange-btn" />Orange
+                    </li>
+                </label>
+
+                <label for="purple-btn">
+                    <li class="purple" id="purple">
+                        <input type="radio" name="colors" id="purple-btn" />Purple
+                    </li>
+                </label>
+
+                <label for="green-btn">
+                    <li class="green" id="green">
+                        <input type="radio" name="colors" id="green-btn" />Green
+                    </li>
+                </label>
+            </ul>
+        </div>
+
+        <div class="current-color">
+            <p>The currently selected color is:</p>
+            <h1 id="current-color">white</h1>
+        </div>
+    </body>
+</html>
